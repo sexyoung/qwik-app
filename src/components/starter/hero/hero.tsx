@@ -5,6 +5,7 @@ import ImgThunder from "~/media/thunder.png?jsx";
 export default component$(() => {
   return (
     <div class={["container", styles.hero]}>
+      <div class="text-4xl">有夠快</div>
       <ImgThunder class={styles["hero-image"]} />
       <h1>
         So <span class="highlight">fantastic</span>
