@@ -12,5 +12,10 @@ export default extendConfig(baseConfig, () => {
       outDir: ".netlify/edge-functions/entry.netlify-edge",
     },
     plugins: [netlifyEdgeAdapter()],
+    resolve: {
+      alias: {
+        ".prisma/client/index-browser": "./node_modules/.prisma/client/index-browser.js"
+      }
+    }
   };
 });
